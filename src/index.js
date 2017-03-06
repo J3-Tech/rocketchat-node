@@ -1,0 +1,1 @@
+import {Authentication} from 'RocketChat';
