@@ -6,10 +6,10 @@ Check [RocketChat](https://rocket.chat) [REST API](https://rocket.chat/docs/deve
 
 ### Me
 
-```
+```nodejs
 var rocketChat = require('rocketchat').RocketChat;
 var client = new rocketChat.Client();
-client.hostname = 'rockat.chat';
+client.hostname = 'rocket.chat';
 client.port = 3001;
 var authentication = new rocketChat.Authentication();
 authentication.login({
