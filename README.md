@@ -1,6 +1,6 @@
 # RocketChat NodeJs Library
 
-[RocketChat](https://rocket.chat) [REST API document](https://rocket.chat/docs/developer-guides/rest-api).
+Check [RocketChat](https://rocket.chat) [REST API](https://rocket.chat/docs/developer-guides/rest-api)
 
 ## Examples
 
