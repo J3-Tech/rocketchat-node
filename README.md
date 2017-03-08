@@ -4,19 +4,34 @@ Check [RocketChat](https://rocket.chat) [REST API](https://rocket.chat/docs/deve
 
 ## Examples
 
-### Me
+### Authentication, list users and post new message
 
 ```nodejs
-var rocketChat = require('rocketchat').RocketChat;
-var client = new rocketChat.Client();
-client.hostname = 'rocket.chat';
-client.port = 3001;
-var authentication = new rocketChat.Authentication();
-authentication.login({
-  username: 'megabot',
-  password: 'hiddenpwd'
-}).then(() => {
-  console.log(authentication.me());
+
+var rocketchat  =  require('./bin/rocketchat.bundle.js').RocketChat;
+
+var client = new rocketchat.Client();
+client.hostname = 'localhost';
+
+var auth = new rocketchat.Authentication(client);
+auth.login({
+  username: 'bot',
+ 	password: 'mypass'
+}).then(() =>  {
+  auth.me().then(({data})=> {
+    console.log(data)
+  });
+  var user = new rocketchat.Users(client);
+  user.list().then(({data}) => {
+    console.log(data);
+  });
+  var chat = new rocketchat.Chat(client);
+  chat.postMessage({
+    roomId: 'general',
+    channel: '#general',
+    text: 'testing from my new lib',
+
+  });
 });
 
 ```
