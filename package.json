@@ -1,6 +1,6 @@
 {
   "name": "@labzone/rocketchat-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node library to communicate with RocketChat",
   "main": "bin/rocketchat.bundle.js",
   "keywords": [
