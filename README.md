@@ -39,5 +39,4 @@ auth.login({
 ## Todo
 
 - Add good documentation
-- Publish to to npm
 - add missing implementation
