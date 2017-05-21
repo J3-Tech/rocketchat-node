@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Node library to communicate with RocketChat",
   "main": "bin/rocketchat.bundle.js",
+  "keywords": [
+		"rocketchat",
+		"rocket",
+		"chat",
+    "library"
+	],
   "scripts": {
     "watch": "node webpack.js --watch",
     "compile": "node webpack.js --compile"
@@ -11,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/labzone/rocketchat-node.git"
   },
-  "author": "",
+  "author": "Dickriven Chellemboyee <chellem.void@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/labzone/rocketchat-node/issues"
